@@ -37,4 +37,4 @@ st.header("The Map:")
 st.write(background + points)
 
 st.header("The list of Cities:")
-st.write(cities)
+st.write(visited)
