@@ -33,4 +33,8 @@ background = alt.Chart(states).mark_geoshape(
     height=600
 )
 
+st.header("The Map:")
 st.write(background + points)
+
+st.header("The list of Cities:")
+st.write(cities)
