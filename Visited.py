@@ -12,6 +12,8 @@ visited = pd.read_csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vTDYgt8M7
 visited['city'] = visited['What City did you visit?']
 visited['state_id'] = visited['What State is it in?']
 
+citylist = visited[["What City did you visit?","What State is it in?"]]
+
 #clean cities information data
 citiesfiltered = cities[["city","state_id", "lat", "lng"]]
 
@@ -37,4 +39,4 @@ st.header("The Map:")
 st.write(background + points)
 
 st.header("The list of Cities:")
-st.write(visited)
+st.write(citylist)
