@@ -22,7 +22,7 @@ states = alt.topo_feature(data.us_10m.url, feature='states')
 points = alt.Chart(final).mark_circle().encode(
     longitude='lng',
     latitude='lat',
-    size=alt.value(10),
+    size=alt.value(25),
     tooltip='city'
 )
 background = alt.Chart(states).mark_geoshape(
